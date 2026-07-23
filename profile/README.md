@@ -74,8 +74,27 @@ No context copied between isolated AI apps, no separate inbox for agent work, an
 | [**matrix-mcp**](https://github.com/mindroom-ai/matrix-mcp) | Matrix MCP server for local coding agents. |
 | [**mindroom-egress-proxy**](https://github.com/mindroom-ai/mindroom-egress-proxy) | Network firewall and approval proxy for agent internet access. |
 
-Plugins add focused capabilities without bloating the core runtime.
-Explore the organization repositories for deep research, long-term memory, voice and location enrichment, thread export, snoozing, restart recovery, credential brokering, and more.
+## Plugins: extend anything
+
+Plugins are one of MindRoom's most powerful features.
+They can extend nearly any part of MindRoom with custom tools, skills, event hooks, OAuth providers, prompt enrichment, safety policies, storage integrations, and lifecycle automation, without editing the core runtime.
+Configured plugins hot-reload automatically, so saving a change updates new turns while in-flight work finishes on the previous code.
+[Read the plugin documentation](https://docs.mindroom.chat/plugins/) to learn how to install, configure, and build them.
+
+| Plugin | What it adds |
+| --- | --- |
+| [**agent-vault-bridge-plugin**](https://github.com/mindroom-ai/agent-vault-bridge-plugin) | Routes agent shell API calls through Agent Vault so credentials never enter the agent process. |
+| [**deep-research-plugin**](https://github.com/mindroom-ai/deep-research-plugin) | Runs bounded, multi-round web research on the agent's configured model and returns cited reports. |
+| [**location-enrich-plugin**](https://github.com/mindroom-ai/location-enrich-plugin) | Adds real-time Dawarich location and movement context to agent prompts. |
+| [**openviking-plugin**](https://github.com/mindroom-ai/openviking-plugin) | Provides automatic long-term memory extraction, recall, and management through OpenViking. |
+| [**ping-hook-plugin**](https://github.com/mindroom-ai/ping-hook-plugin) | Shows the smallest useful event-hook plugin with a direct `!ping-hook` response. |
+| [**restart-resume-plugin**](https://github.com/mindroom-ai/restart-resume-plugin) | Wakes tagged idle threads after MindRoom restarts, then clears their restart tags. |
+| [**shell-guard-plugin**](https://github.com/mindroom-ai/shell-guard-plugin) | Intercepts and blocks configured dangerous shell tool calls before execution. |
+| [**thread-export-plugin**](https://github.com/mindroom-ai/thread-export-plugin) | Continuously exports Matrix threads as workspace YAML for authorized agents. |
+| [**thread-goal-plugin**](https://github.com/mindroom-ai/thread-goal-plugin) | Keeps persistent thread goals available across context compaction and restarts. |
+| [**thread-snooze-plugin**](https://github.com/mindroom-ai/thread-snooze-plugin) | Resolves threads temporarily and wakes them automatically at a chosen time. |
+| [**voice-enrich-plugin**](https://github.com/mindroom-ai/voice-enrich-plugin) | Adds private speech-to-text guidance to prompts without changing visible messages. |
+| [**workloop-plugin**](https://github.com/mindroom-ai/workloop-plugin) | **Archived:** its persistent planning workflow now ships as MindRoom's native [`todo` tool](https://docs.mindroom.chat/tools/project-management/#todo). |
 
 ## Open source, end to end
 
