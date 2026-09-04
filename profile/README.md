@@ -90,7 +90,6 @@ Configured plugins hot-reload automatically, so saving a change updates new turn
 | [**ping-hook-plugin**](https://github.com/mindroom-ai/ping-hook-plugin) | Shows the smallest useful event-hook plugin with a direct `!ping-hook` response. |
 | [**restart-resume-plugin**](https://github.com/mindroom-ai/restart-resume-plugin) | Wakes tagged idle threads after MindRoom restarts, then clears their restart tags. |
 | [**shell-guard-plugin**](https://github.com/mindroom-ai/shell-guard-plugin) | Intercepts and blocks configured dangerous shell tool calls before execution. |
-| [**thread-export-plugin**](https://github.com/mindroom-ai/thread-export-plugin) | Continuously exports Matrix threads as workspace YAML for authorized agents. |
 | [**thread-goal-plugin**](https://github.com/mindroom-ai/thread-goal-plugin) | Keeps persistent thread goals available across context compaction and restarts. |
 | [**thread-snooze-plugin**](https://github.com/mindroom-ai/thread-snooze-plugin) | Resolves threads temporarily and wakes them automatically at a chosen time. |
 | [**voice-enrich-plugin**](https://github.com/mindroom-ai/voice-enrich-plugin) | Adds private speech-to-text guidance to prompts without changing visible messages. |
