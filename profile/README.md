@@ -1,6 +1,9 @@
 <div align="center">
   <a href="https://mindroom.chat">
-    <img src="https://raw.githubusercontent.com/mindroom-ai/mindroom/main/frontend/public/logo-text.svg" alt="MindRoom" width="420">
+    <picture>
+      <source media="(prefers-reduced-motion: no-preference)" srcset="https://raw.githubusercontent.com/mindroom-ai/mindroom/main/assets/logo/logo-mark-animated.svg" />
+      <img src="https://raw.githubusercontent.com/mindroom-ai/mindroom/main/assets/logo/logo-mark.svg" alt="MindRoom" width="180" />
+    </picture>
   </a>
 
   <h1>AI agents that live in your chat rooms</h1>
