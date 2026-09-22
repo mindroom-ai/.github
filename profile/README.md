@@ -91,6 +91,7 @@ Configured plugins hot-reload automatically, so saving a change updates new turn
 | [**location-enrich-plugin**](https://github.com/mindroom-ai/location-enrich-plugin) | Adds real-time Dawarich location and movement context to agent prompts. |
 | [**openviking-plugin**](https://github.com/mindroom-ai/openviking-plugin) | Provides automatic long-term memory extraction, recall, and management through OpenViking. |
 | [**ping-hook-plugin**](https://github.com/mindroom-ai/ping-hook-plugin) | Shows the smallest useful event-hook plugin with a direct `!ping-hook` response. |
+| [**response-audit-jev-plugin**](https://github.com/mindroom-ai/response-audit-jev-plugin) | Uses JEV or an LLM to check completed answers for citation and source-use issues, then requests corrections in the same thread. |
 | [**restart-resume-plugin**](https://github.com/mindroom-ai/restart-resume-plugin) | Wakes tagged idle threads after MindRoom restarts, then clears their restart tags. |
 | [**shell-guard-plugin**](https://github.com/mindroom-ai/shell-guard-plugin) | Intercepts and blocks configured dangerous shell tool calls before execution. |
 | [**thread-goal-plugin**](https://github.com/mindroom-ai/thread-goal-plugin) | Keeps persistent thread goals available across context compaction and restarts. |
