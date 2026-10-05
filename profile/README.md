@@ -25,7 +25,7 @@ https://github.com/user-attachments/assets/f8325b3c-7ed0-4cd7-bc77-0c4cd74f226e
 
 MindRoom gives you a personal agent for your calendar, notes, trips, and homelab, and shared agents for your team's email, documents, and code.
 Every agent is a real user on [Matrix](https://matrix.org/), the open chat standard, so you talk to it in [MindRoom Chat](https://github.com/mindroom-ai/mindroom-chat), in any other Matrix client, or in Slack, Telegram, WhatsApp, and Discord through bridges.
-Pick a local model for your private life or a frontier model for hard problems, and self-host the whole stack or run only the agents on your own computer.
+Pick a [local model](https://docs.mindroom.chat/configuration/models/) for your private life or a frontier model for hard problems, and self-host the whole stack or run only the agents on your own computer.
 
 **Run it on any computer**
 
@@ -34,6 +34,7 @@ uvx mindroom run
 ```
 
 Needs [uv](https://docs.astral.sh/uv/getting-started/installation/) and a model: an API key, a subscription login such as Codex, or a local model.
+It installs MindRoom with a starter agent, pairs it with your [MindRoom Chat](https://chat.mindroom.chat) account, and starts it.
 
 **Or use the macOS app**
 
@@ -72,8 +73,8 @@ Rather not run it yourself? [Try hosted MindRoom](https://mindroom.chat/#hosted)
 </tr>
 </table>
 
-More in the [showcase](https://docs.mindroom.chat/showcase/) and the [MindRoom README](https://github.com/mindroom-ai/mindroom#see-it-in-action).
-The recordings use a fictional company and scripted model responses.
+These are stills from the [showcase](https://docs.mindroom.chat/showcase/) recordings: MindRoom Chat and a real MindRoom backend, with a fictional company and scripted model responses.
+More in the [MindRoom README](https://github.com/mindroom-ai/mindroom#see-it-in-action).
 
 ## Why MindRoom
 
@@ -131,7 +132,8 @@ Bridges bring the same agents to Slack, Telegram, WhatsApp, and Discord, and an 
 | Run MindRoom on your computer and chat in MindRoom Chat | [Quick start](https://github.com/mindroom-ai/mindroom#quick-start) |
 | Run your agents on a Mac with the native app | [macOS app guide](https://docs.mindroom.chat/installation/macos-app/) |
 | Self-host everything with Docker Compose | [mindroom-stack](https://github.com/mindroom-ai/mindroom-stack) |
-| Give an agent its own NixOS machine | [lxc-nixos](https://github.com/mindroom-ai/lxc-nixos) |
+| Give an agent its own NixOS machine (advanced) | [lxc-nixos](https://github.com/mindroom-ai/lxc-nixos) |
+| Deploy for an organization on Kubernetes | [Kubernetes guide](https://docs.mindroom.chat/deployment/kubernetes/) |
 | Let us run it for you | [Hosted MindRoom](https://mindroom.chat/#hosted) |
 | Learn configuration, tools, and deployment | [docs.mindroom.chat](https://docs.mindroom.chat) |
 
@@ -140,7 +142,7 @@ Bridges bring the same agents to Slack, Telegram, WhatsApp, and Discord, and an 
 | Project | What it does |
 | --- | --- |
 | [**mindroom**](https://github.com/mindroom-ai/mindroom) | The agent runtime: orchestration, dashboard, 100+ tools, memory, knowledge bases, and the Matrix integration. |
-| [**mindroom-chat**](https://github.com/mindroom-ai/mindroom-chat) | The chat app built for agents, with threads, streaming replies, tool traces, approvals, canvases, and the agent's browser. |
+| [**mindroom-chat**](https://github.com/mindroom-ai/mindroom-chat) | MindRoom's Cinny-based chat app built for agents, with threads, streaming replies, tool traces, approvals, canvases, and the agent's browser. |
 | [**mindroom-stack**](https://github.com/mindroom-ai/mindroom-stack) | A Docker Compose stack with MindRoom, a Matrix homeserver, and MindRoom Chat. |
 | [**lxc-nixos**](https://github.com/mindroom-ai/lxc-nixos) | A NixOS flake that runs the whole stack in an Incus container an agent can manage itself. |
 | [**example-agents**](https://github.com/mindroom-ai/example-agents) | An example agent workspace with a persona, operating rules, knowledge, memory, and skills. |
@@ -165,7 +167,7 @@ Bridges bring the same agents to Slack, Telegram, WhatsApp, and Discord, and an 
 ## Plugins
 
 Plugins add tools, skills, event hooks, OAuth providers, prompt enrichment, and safety policies without touching the core runtime, and they reload while MindRoom keeps running.
-See [Plugins](https://docs.mindroom.chat/plugins/) to install, configure, and build them.
+Install one with `mindroom plugins install <name>`, and see [Plugins](https://docs.mindroom.chat/plugins/) to configure and build them.
 
 | Plugin | What it adds |
 | --- | --- |
