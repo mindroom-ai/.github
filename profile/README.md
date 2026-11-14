@@ -180,7 +180,6 @@ Install one with `mindroom plugins install <name>`, and see [Plugins](https://do
 | [**restart-resume-plugin**](https://github.com/mindroom-ai/restart-resume-plugin) | Wakes tagged idle threads after MindRoom restarts, then clears their restart tags. |
 | [**shell-guard-plugin**](https://github.com/mindroom-ai/shell-guard-plugin) | Intercepts and blocks configured dangerous shell tool calls before execution. |
 | [**thread-goal-plugin**](https://github.com/mindroom-ai/thread-goal-plugin) | Keeps persistent thread goals available across context compaction and restarts. |
-| [**thread-snooze-plugin**](https://github.com/mindroom-ai/thread-snooze-plugin) | Resolves threads temporarily and wakes them automatically at a chosen time. |
 | [**voice-enrich-plugin**](https://github.com/mindroom-ai/voice-enrich-plugin) | Adds private speech-to-text guidance to prompts without changing visible messages. |
 
 ## Contribute
