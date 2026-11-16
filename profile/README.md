@@ -176,10 +176,12 @@ Install one with `mindroom plugins install <name>`, and see [Plugins](https://do
 | [**location-enrich-plugin**](https://github.com/mindroom-ai/location-enrich-plugin) | Adds real-time Dawarich location and movement context to agent prompts. |
 | [**openviking-plugin**](https://github.com/mindroom-ai/openviking-plugin) | Provides automatic long-term memory extraction, recall, and management through OpenViking. |
 | [**ping-hook-plugin**](https://github.com/mindroom-ai/ping-hook-plugin) | Shows the smallest useful event-hook plugin with a direct `!ping-hook` response. |
+| [**pull-request-plugin**](https://github.com/mindroom-ai/pull-request-plugin) | Links GitHub pull requests to Matrix threads, by a tool and automatically when an agent creates one; MindRoom Chat shows them on thread cards with [pull-request-client-plugin](https://github.com/mindroom-ai/pull-request-client-plugin). |
 | [**response-audit-jev-plugin**](https://github.com/mindroom-ai/response-audit-jev-plugin) | Uses JEV or an LLM to check completed answers for citation and source-use issues, then requests corrections in the same thread. |
 | [**restart-resume-plugin**](https://github.com/mindroom-ai/restart-resume-plugin) | Wakes tagged idle threads after MindRoom restarts, then clears their restart tags. |
 | [**shell-guard-plugin**](https://github.com/mindroom-ai/shell-guard-plugin) | Intercepts and blocks configured dangerous shell tool calls before execution. |
 | [**thread-goal-plugin**](https://github.com/mindroom-ai/thread-goal-plugin) | Keeps persistent thread goals available across context compaction and restarts. |
+| [**thread-worktree-plugin**](https://github.com/mindroom-ai/thread-worktree-plugin) | Ties a Matrix thread to a git worktree and tells the agent to work there on every turn. |
 | [**voice-enrich-plugin**](https://github.com/mindroom-ai/voice-enrich-plugin) | Adds private speech-to-text guidance to prompts without changing visible messages. |
 
 ## Contribute
