@@ -171,6 +171,7 @@ Install one with `mindroom plugins install <name>`, and see [Plugins](https://do
 | Plugin | What it adds |
 | --- | --- |
 | [**deep-research-plugin**](https://github.com/mindroom-ai/deep-research-plugin) | Runs bounded, multi-round web research on the agent's configured model and returns cited reports. |
+| [**error-notifier-plugin**](https://github.com/mindroom-ai/error-notifier-plugin) | Posts a short, redacted alert to one Matrix room when MindRoom logs an error, with a suggested fix when it knows one. |
 | [**injection-guard-plugin**](https://github.com/mindroom-ai/injection-guard-plugin) | Checks tool results for prompt injection with a judgment backend before the model reads them, and withholds or marks what it flags. |
 | [**location-enrich-plugin**](https://github.com/mindroom-ai/location-enrich-plugin) | Adds real-time Dawarich location and movement context to agent prompts. |
 | [**openviking-plugin**](https://github.com/mindroom-ai/openviking-plugin) | Provides automatic long-term memory extraction, recall, and management through OpenViking. |
