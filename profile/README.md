@@ -149,16 +149,17 @@ Bridges bring the same agents to Slack, Telegram, WhatsApp, and Discord, and an 
 | [**matrix-mcp**](https://github.com/mindroom-ai/matrix-mcp) | A Matrix MCP server for local coding agents. |
 | [**mindroom-egress-proxy**](https://github.com/mindroom-ai/mindroom-egress-proxy) | A network firewall and approval proxy for agent internet access. |
 | [**mindroom-nio**](https://github.com/mindroom-ai/mindroom-nio) | MindRoom's fork of matrix-nio, the Python Matrix client library the runtime is built on. |
-| [**homebrew-tap**](https://github.com/mindroom-ai/homebrew-tap) | The Homebrew tap for the macOS app. |
+| [**homebrew-tap**](https://github.com/mindroom-ai/homebrew-tap) | The Homebrew tap for the MindRoom macOS app and MindRoom Chat. |
 
 <details>
-<summary><b>Matrix and client forks</b></summary>
+<summary><b>Matrix and client forks and add-ons</b></summary>
 
 | Project | What it does |
 | --- | --- |
 | [**mindroom-tuwunel**](https://github.com/mindroom-ai/mindroom-tuwunel) | MindRoom's fork of the Tuwunel Matrix homeserver, used by mindroom-stack. |
 | [**mindroom-synapse**](https://github.com/mindroom-ai/mindroom-synapse) | MindRoom's fork of Synapse for high-frequency edit streaming. |
 | [**lk-jwt-service**](https://github.com/mindroom-ai/lk-jwt-service) | MindRoom's fork of the MatrixRTC authorization service for voice calls. |
+| [**mindroom-sygnal**](https://github.com/mindroom-ai/mindroom-sygnal) | An add-on for the Sygnal push gateway that rings iPhones with a call alert when a MindRoom call comes in. |
 | [**mindroom-librechat**](https://github.com/mindroom-ai/mindroom-librechat) | A LibreChat fork that shows MindRoom's server-side tool calls as native tool cards. |
 
 </details>
@@ -180,7 +181,7 @@ Install one with `mindroom plugins install <name>`, and see [Plugins](https://do
 | [**pull-request-client-plugin**](https://github.com/mindroom-ai/pull-request-client-plugin) | A MindRoom Chat client plugin: pull request cards on threads and a side panel with the changed files and their diffs. |
 | [**response-audit-plugin**](https://github.com/mindroom-ai/response-audit-plugin) | Audits delivered answers with a judgment backend and asks the agent to verify facts that no lookup supported. |
 | [**restart-resume-plugin**](https://github.com/mindroom-ai/restart-resume-plugin) | Wakes tagged idle threads after MindRoom restarts, then clears their restart tags. |
-| [**shell-guard-plugin**](https://github.com/mindroom-ai/shell-guard-plugin) | Intercepts and blocks configured dangerous shell tool calls before execution. |
+| [**shell-guard-plugin**](https://github.com/mindroom-ai/shell-guard-plugin) | Blocks shell commands that would restart, stop, or disable the `mindroom-chat` service the agent runs in. |
 | [**thread-goal-plugin**](https://github.com/mindroom-ai/thread-goal-plugin) | Keeps persistent thread goals available across context compaction and restarts. |
 | [**thread-worktree-plugin**](https://github.com/mindroom-ai/thread-worktree-plugin) | Ties a Matrix thread to a git worktree and tells the agent to work there on every turn. |
 | [**voice-enrich-plugin**](https://github.com/mindroom-ai/voice-enrich-plugin) | Adds private speech-to-text guidance to prompts without changing visible messages. |
