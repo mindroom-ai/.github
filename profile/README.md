@@ -183,6 +183,7 @@ Install one with `mindroom plugins install <name>`, and see [Plugins](https://do
 | [**restart-resume-plugin**](https://github.com/mindroom-ai/restart-resume-plugin) | Wakes tagged idle threads after MindRoom restarts, then clears their restart tags. |
 | [**shell-guard-plugin**](https://github.com/mindroom-ai/shell-guard-plugin) | Blocks shell commands that would restart, stop, or disable the `mindroom-chat` service the agent runs in. |
 | [**thread-goal-plugin**](https://github.com/mindroom-ai/thread-goal-plugin) | Keeps persistent thread goals available across context compaction and restarts. |
+| [**thread-usage-client-plugin**](https://github.com/mindroom-ai/thread-usage-client-plugin) | A MindRoom Chat client plugin: quiet per-thread AI cost, tokens, models, and context window telemetry on Compact cards and thread details. |
 | [**thread-worktree-plugin**](https://github.com/mindroom-ai/thread-worktree-plugin) | Ties a Matrix thread to a git worktree and tells the agent to work there on every turn. |
 | [**voice-enrich-plugin**](https://github.com/mindroom-ai/voice-enrich-plugin) | Adds private speech-to-text guidance to prompts without changing visible messages. |
 
