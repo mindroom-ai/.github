@@ -145,6 +145,7 @@ Bridges bring the same agents to Slack, Telegram, WhatsApp, and Discord, and an 
 | [**mindroom-chat**](https://github.com/mindroom-ai/mindroom-chat) | MindRoom's chat app built for agents, for the web, Mac, iPhone, iPad, and Android, with threads, streaming replies, tool traces, approvals, canvases, and the agent's browser. |
 | [**mindroom-stack**](https://github.com/mindroom-ai/mindroom-stack) | A Docker Compose stack with MindRoom, a Matrix homeserver, and MindRoom Chat. |
 | [**lxc-nixos**](https://github.com/mindroom-ai/lxc-nixos) | A NixOS flake that runs the whole stack in an Incus container an agent can manage itself. |
+| [**microvm-nixos**](https://github.com/mindroom-ai/microvm-nixos) | A NixOS flake that runs the whole stack in a standalone QEMU microVM via `microvm.nix`. |
 | [**example-agents**](https://github.com/mindroom-ai/example-agents) | An example agent workspace with a persona, operating rules, knowledge, memory, and skills. |
 | [**matrix-mcp**](https://github.com/mindroom-ai/matrix-mcp) | A Matrix MCP server for local coding agents. |
 | [**mindroom-egress-proxy**](https://github.com/mindroom-ai/mindroom-egress-proxy) | A network firewall and approval proxy for agent internet access. |
@@ -167,7 +168,8 @@ Bridges bring the same agents to Slack, Telegram, WhatsApp, and Discord, and an 
 ## Plugins
 
 Plugins add tools, skills, event hooks, OAuth providers, prompt enrichment, and safety policies without touching the core runtime, and they reload while MindRoom keeps running.
-Install one with `mindroom plugins install <name>`, and see [Plugins](https://docs.mindroom.chat/plugins/) to configure and build them.
+Install backend plugins with `mindroom plugins install <name>`, and see [Plugins](https://docs.mindroom.chat/plugins/) to configure and build them.
+MindRoom Chat client plugins ship bundled in [MindRoom Chat](https://github.com/mindroom-ai/mindroom-chat).
 
 | Plugin | What it adds |
 | --- | --- |
@@ -177,8 +179,8 @@ Install one with `mindroom plugins install <name>`, and see [Plugins](https://do
 | [**location-enrich-plugin**](https://github.com/mindroom-ai/location-enrich-plugin) | Adds real-time Dawarich location and movement context to agent prompts. |
 | [**openviking-plugin**](https://github.com/mindroom-ai/openviking-plugin) | Provides automatic long-term memory extraction, recall, and management through OpenViking. |
 | [**ping-hook-plugin**](https://github.com/mindroom-ai/ping-hook-plugin) | Shows the smallest useful event-hook plugin with a direct `!ping-hook` response. |
-| [**pull-request-plugin**](https://github.com/mindroom-ai/pull-request-plugin) | Links GitHub pull requests to Matrix threads, by a tool and automatically when an agent creates one; MindRoom Chat shows them with pull-request-client-plugin. |
 | [**pull-request-client-plugin**](https://github.com/mindroom-ai/pull-request-client-plugin) | A MindRoom Chat client plugin: pull request cards on threads and a side panel with the changed files and their diffs. |
+| [**pull-request-plugin**](https://github.com/mindroom-ai/pull-request-plugin) | Links GitHub pull requests to Matrix threads, by a tool and automatically when an agent creates one; MindRoom Chat shows them with pull-request-client-plugin. |
 | [**response-audit-plugin**](https://github.com/mindroom-ai/response-audit-plugin) | Audits delivered answers with a judgment backend and asks the agent to verify facts that no lookup supported. |
 | [**restart-resume-plugin**](https://github.com/mindroom-ai/restart-resume-plugin) | Wakes tagged idle threads after MindRoom restarts, then clears their restart tags. |
 | [**shell-guard-plugin**](https://github.com/mindroom-ai/shell-guard-plugin) | Blocks shell commands that would restart, stop, or disable the `mindroom-chat` service the agent runs in. |
